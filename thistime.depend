@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1390585118 source:h:\c++\thistime\thistime\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	"resource.h"
+	"FileReadin.h"
+	"misc.h"
+	<cstdio>
+	<Tchar.h>
+
+1390584901 h:\c++\thistime\thistime\resource.h
+
+1390584749 source:h:\c++\thistime\thistime\resource.rc
+	<windows.h>
+	"resource.h"
+
+1389823285 source:c:\users\collin\google drive\thistime\thistime\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	"resource.h"
+	"FileReadin.h"
+	"misc.h"
+	<cstdio>
+	<Tchar.h>
+
+1389821440 c:\users\collin\google drive\thistime\thistime\resource.h
+
+1389740325 source:c:\users\collin\google drive\thistime\thistime\resource.rc
+	<windows.h>
+	"resource.h"
+
+1390494384 h:\c++\thistime\thistime\filereadin.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<vector>
+	<array>
+
+1389823231 c:\users\collin\google drive\thistime\thistime\filereadin.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<vector>
+	<array>
+
+1389823298 c:\users\collin\google drive\thistime\thistime\misc.h
+	<cstdlib>
+
+1390494384 h:\c++\thistime\thistime\misc.h
+	<cstdlib>
+
+1390868294 source:c:\users\collin\google drive\thistime\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	"resource.h"
+	"FileReadin.h"
+	"misc.h"
+	<cstdio>
+	<Tchar.h>
+
+1390869484 c:\users\collin\google drive\thistime\resource.h
+
+1390863818 c:\users\collin\google drive\thistime\filereadin.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<string>
+	<vector>
+	<array>
+
+1390494386 c:\users\collin\google drive\thistime\misc.h
+	<cstdlib>
+
+1390869531 source:c:\users\collin\google drive\thistime\resource.rc
+	<windows.h>
+	"resource.h"
+
