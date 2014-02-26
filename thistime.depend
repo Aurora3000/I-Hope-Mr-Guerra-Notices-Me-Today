@@ -51,19 +51,21 @@
 1390494384 h:\c++\thistime\thistime\misc.h
 	<cstdlib>
 
-1390868294 source:c:\users\collin\google drive\thistime\main.cpp
+1393275609 source:c:\users\collin\google drive\thistime\main.cpp
 	<windows.h>
 	<iostream>
 	<fstream>
 	"resource.h"
 	"FileReadin.h"
+	"SaveFile.h"
 	"misc.h"
+	"A.h"
 	<cstdio>
 	<Tchar.h>
 
-1390869484 c:\users\collin\google drive\thistime\resource.h
+1392741352 c:\users\collin\google drive\thistime\resource.h
 
-1390863818 c:\users\collin\google drive\thistime\filereadin.h
+1391203888 c:\users\collin\google drive\thistime\filereadin.h
 	<iostream>
 	<fstream>
 	<cstdlib>
@@ -71,10 +73,101 @@
 	<vector>
 	<array>
 
-1390494386 c:\users\collin\google drive\thistime\misc.h
+1392592054 c:\users\collin\google drive\thistime\misc.h
 	<cstdlib>
+	<windows.h>
 
-1390869531 source:c:\users\collin\google drive\thistime\resource.rc
+1392156456 source:c:\users\collin\google drive\thistime\resource.rc
 	<windows.h>
 	"resource.h"
+
+1391101201 source:h:\c++\thistime\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	"resource.h"
+	"FileReadin.h"
+	"misc.h"
+	"A.h"
+	<cstdio>
+	<Tchar.h>
+
+1391100803 h:\c++\thistime\resource.h
+
+1390863820 h:\c++\thistime\filereadin.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<string>
+	<vector>
+	<array>
+
+1391015993 h:\c++\thistime\misc.h
+	<cstdlib>
+
+1391101167 source:h:\c++\thistime\resource.rc
+	<windows.h>
+	"resource.h"
+
+1391101289 h:\c++\thistime\a.h
+	<cstdlib>
+	<windows.h>
+
+1393275626 c:\users\collin\google drive\thistime\a.h
+	<cstdlib>
+	<windows.h>
+	<vector>
+	<algorithm>
+	<cmath>
+
+1392156456 source:c:\users\collinlaptop\desktop\thistime\resource.rc
+	<windows.h>
+	"resource.h"
+
+1392741350 c:\users\collinlaptop\desktop\thistime\resource.h
+
+1392913856 source:c:\users\collinlaptop\desktop\thistime\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	"resource.h"
+	"FileReadin.h"
+	"SaveFile.h"
+	"misc.h"
+	"A.h"
+	<cstdio>
+	<Tchar.h>
+
+1391203888 c:\users\collinlaptop\desktop\thistime\filereadin.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<string>
+	<vector>
+	<array>
+
+1392592054 c:\users\collinlaptop\desktop\thistime\misc.h
+	<cstdlib>
+	<windows.h>
+
+1392396004 c:\users\collinlaptop\desktop\thistime\a.h
+	<cstdlib>
+	<windows.h>
+	<vector>
+	<algorithm>
+	<cmath>
+
+1392915107 c:\users\collinlaptop\desktop\thistime\savefile.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<vector>
+	"A.h"
+
+1393186578 c:\users\collin\google drive\thistime\savefile.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<vector>
+	"A.h"
 

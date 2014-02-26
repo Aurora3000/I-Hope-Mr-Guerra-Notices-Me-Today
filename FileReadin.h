@@ -19,15 +19,19 @@ public:
     string getGrade();
     string getClassName(int);
     string getClassGrade(int);
-    string getData(char*);
+    string getNext(char*);
+    bool nlCheck(char*);
+    bool endCheck(char*);
+    int getLen();
     int numClasses;
 private:
+    string getData(char*);
     string LastName = "";
     string FirstName = "";
     string Grade = "";
     vector<string> ClassGrade;
 	int pos=0;
-	int gradePos = 0;
+	int finalPos = 0;
 	vector<string> classes;
 	char temp[21];
 };
@@ -44,8 +48,8 @@ FileReadin::FileReadin(char* x)
     {
         classes.at(c) = getData(x);
         ClassGrade.at(c) = getData(x);
-        cout << classes.at(c) << " " << ClassGrade.at(c) << endl;
     }
+    finalPos = pos;
 }
 
 string FileReadin::getData(char* x)
@@ -54,7 +58,7 @@ string FileReadin::getData(char* x)
 	for(int i=pos;i<300;i++)
     {
 		pos=i;
-		if(x[i]!='$')
+		if(x[i]!='$' && x[i]!='\n' && x[i]!='^')
 			y+=x[i];
         else
         {
@@ -64,6 +68,25 @@ string FileReadin::getData(char* x)
 	}
 	return y;
 }
+
+bool FileReadin::nlCheck(char* x)
+{
+    if (x[pos - 1] == '\n')
+        return true;
+    else
+        return false;
+}
+
+bool FileReadin::endCheck(char* x)
+{
+    if (x[pos - 1] == '^')
+        return true;
+    else
+        return false;
+}
+
+string FileReadin::getNext(char* x){return getData(x);}
+int FileReadin::getLen(){return finalPos;}
 string FileReadin::getClassName(int x){return classes.at(x);}
 string FileReadin::getClassGrade(int x){return ClassGrade.at(x);}
 string FileReadin::getLastName(){return LastName;}

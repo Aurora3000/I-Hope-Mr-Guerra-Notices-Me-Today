@@ -10,6 +10,10 @@ BEGIN
         MENUITEM "&Save", ID_FILE_SAVE
         MENUITEM "E&xit", ID_FILE_EXIT
     END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Class Names", ID_EDIT_NAMES
+    END
     POPUP "&Help"
     BEGIN
         MENUITEM "&About", ID_HELP_ABOUT
@@ -37,14 +41,34 @@ BEGIN
     CONTROL "&Go", IDB_INPUTB_A, "Button", WS_VISIBLE | WS_CHILD, 53, 30, 20, 14
 END
 
-IDD_LIST DIALOG DISCARDABLE 0, 0, 200, 150
+IDD_LIST DIALOG DISCARDABLE 0, 0, 200, 185
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Assignments"
 FONT 8, "MS Sans Serif"
 BEGIN
+    GROUPBOX "Enter assignment name and grade.", IDG_ADD, 200, 15, 120, 65
+    LTEXT "Name: ", IDC_ADD_N, 210, 30, 27, 14, WS_VISIBLE | WS_CHILD
+    LTEXT "Earned/Possible: ", IDC_ADD_G, 210, 45, 60, 14, WS_VISIBLE | WS_CHILD
+    CTEXT "/", IDC_ADD_S, 289, 45, 5, 14, WS_VISIBLE | WS_CHILD
+    EDITTEXT IDE_ADD_N, 236, 28, 79, 14, WS_VISIBLE | WS_CHILD | ES_AUTOHSCROLL | ES_LEFT
+    EDITTEXT IDE_ADD_G, 269, 43, 20, 14, WS_VISIBLE | WS_CHILD | ES_AUTOHSCROLL | ES_LEFT
+    EDITTEXT IDE_ADD_GG, 295, 43, 20, 14, WS_VISIBLE | WS_CHILD | ES_AUTOHSCROLL | ES_LEFT
+    PUSHBUTTON "Accept", IDB_ADD_B, 235, 60, 50, 14, WS_VISIBLE | WS_CHILD
+
     CTEXT "Add or Remove assignments from your class.", IDC_LIST_A, 5, 5, 190, 14, WS_VISIBLE | WS_CHILD | SS_CENTER
-    LISTBOX IDL_ASSIGN, 5, 15, 100, 135, WS_VISIBLE | WS_CHILD | LBS_DISABLENOSCROLL
+    LISTBOX IDL_ASSIGN, 5, 15, 100, 175, WS_VISIBLE | WS_CHILD | LBS_DISABLENOSCROLL | LBS_NOTIFY
     PUSHBUTTON "Add", IDB_LIST_A, 110, 15, 50, 14, WS_VISIBLE | WS_CHILD
     PUSHBUTTON "Remove", IDB_LIST_R, 110, 30, 50, 14, WS_VISIBLE | WS_CHILD
-    CTEXT "To add an assignment just push the add button to the left of the list box.\nTo remove an assignment click on the assignment and press the remove button below the add button.", IDC_LIST_B, 110, 55, 80, 105, WS_VISIBLE | WS_CHILD
+    PUSHBUTTON "Edit", IDB_LIST_E, 110, 45, 50, 14, WS_VISIBLE | WS_CHILD
+    CTEXT "", IDC_LIST_G, 110, 65, 50, 14, WS_VISIBLE | WS_CHILD
+    LTEXT "", IDC_LIST_T, 117, 79, 70, 14, WS_VISIBLE | WS_CHILD | SS_LEFT
+    CTEXT "To add an assignment just push the add button to the left of the list box.\nTo remove an assignment click on the assignment and press the remove button.\nTo edit an assignment click on the assignment and then click the edit button", IDC_LIST_B, 110, 95, 80, 105, WS_VISIBLE | WS_CHILD
+END
+
+IDD_NAMES DIALOG DISCARDABLE 0, 0, 170, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Class Names"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT "   Enter names into the boxes and press change.", IDC_NAMES, 5, 5, 190, 14
 END

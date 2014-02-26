@@ -3,6 +3,7 @@
 #define MISC_H_INCLUDED
 
 #include <cstdlib>
+#include <windows.h>
 using namespace std;
 
 class misc
@@ -14,7 +15,7 @@ public:
 string misc::makeString(char* temp)
 {
     string sTemp = "";
-    for (int x = 0; x < 30; x++)
+    for (unsigned int x = 0; x < strlen(temp); x++)
     {
         if (temp[x] != '\0')
             sTemp += temp[x];
@@ -24,4 +25,4 @@ string misc::makeString(char* temp)
     return sTemp;
 }
 
-#endif // MISC_H_INCLUDED
+#endif
